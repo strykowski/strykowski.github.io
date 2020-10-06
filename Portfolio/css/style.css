@@ -1,0 +1,255 @@
+body{
+    background-color: #06080C;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #ffffff;
+    margin: 0;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-25%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+nav{
+    height: 80px;
+}
+
+nav h1{
+    font-size: 16px;
+    padding: 31px 0px 31px 72px;
+    margin: 0;
+    text-align: center;
+    float: left;
+    animation: 0.8s ease-in-out 0s 1 slideInFromTop;
+}
+
+nav ul{
+    list-style: none;
+    padding: 31px 0px;
+    margin: 0;
+    margin-right: 72px;
+    float: right;
+    display: block;
+    animation: 0.8s ease-in-out 0s 1 slideInFromTop;
+}
+
+nav li{
+    padding: 0px 16px;
+    font-size: 12px;
+    float: left;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #7D839B;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 6px 0;
+    position: relative;
+    top: 0;
+    transition: top ease 0.6s;
+}
+
+nav li a:hover{
+    color: #4B6CF0;
+    top: -5px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    margin: 128px 0 168px;
+    animation: 0.8s ease-in-out 0s 1 slideInFromTop;
+}
+
+.hero h1{
+   font-size: 96px;
+   font-weight: 400;
+   margin: 0 72px;
+}
+
+.about{
+    display: inline-block;
+    animation: 0.8s ease-in-out 0s 1 slideInFromTop;
+}
+
+.about h2{
+    margin: 0;
+    font-weight: 400;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #D4D9EC;
+    margin-left: 72px;
+    margin-bottom: 24px;
+}
+
+.hero-icon{
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 112px;
+}
+
+.about-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 96px;
+}
+
+.photo img{
+    height: 196px;
+    width: 196px;
+    margin: auto;
+   display: block;
+}
+
+.img-description{
+    display: inline;
+    max-width: 512px;
+}
+
+.img-description p{
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+
+.button-text{
+    margin-left: 72px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 168px;
+    padding: 16px 0;
+    position: relative;
+    top: 0;
+    transition: top ease 0.6s;
+}
+
+.button-text:hover{
+    color: #4B6CF0;
+    cursor: pointer;
+    top: -5px;
+}
+
+.case-studies{
+    margin-top: 96px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 96px;
+}
+
+#id{
+    float: right;
+}
+
+.study{
+    margin-bottom: 32px;
+    max-width: 512px;
+}
+
+.study p{
+    color: #7D839B;
+    line-height: 1.4em;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.study-icon{
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.case-studies h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cta-section{
+    margin-top: 96px;
+    margin-left: 72px;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cta-section h1{
+    padding: 0px 48px;
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+.cta-section h3{
+    margin-top: 0;
+}
+
+footer{
+    margin-top: 96px;
+    height: 600px;
+}
+
+.social, .formal, .contact{
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+.contact li{
+    font-weight: 700;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.contact a:hover{
+    color: #DEFF12;
+    top: -5px;
+}
+
+
+footer ul{
+    float: left;
+    list-style: none;
+    margin-left: 32px;
+    margin-top: 0;
+}
+
+footer li{
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
