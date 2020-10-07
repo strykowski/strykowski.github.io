@@ -102,7 +102,7 @@ h3{
     float: left;
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 112px;
+    margin-bottom: 148px;
 }
 
 .about-grid-container{
@@ -179,7 +179,7 @@ h3{
     float: left;
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .case-studies h2{
@@ -191,6 +191,7 @@ h3{
 .cta-section{
     margin-top: 96px;
     margin-left: 72px;
+    margin-right: 72px;
     background-image: url(../img/background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -252,4 +253,55 @@ footer li{
     font-size: 24px;
     font-weight: 400;
     padding-bottom: 16px;
+}
+
+
+@media (max-width: 900px) {
+    nav h1{
+        padding-left: 32px;
+    }
+    
+    nav ul{
+        display: none;
+    }
+
+
+    .hero{
+        margin: 72px 0 128px;
+    }
+
+    .hero h1{
+        font-size: 56px;
+        margin: 0 32px;
+    }
+
+    .about-grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:64px 0px;
+    }
+
+    .hero-icon{
+        margin-bottom: 168px;
+    }
+
+    .img-description{
+        margin-right: 32px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 24px 0px;
+    }
+
+    .study{
+        margin-right: 32px;
+    }
+
+    .study-icon{
+        margin-bottom: 96px;
+    }
 }
